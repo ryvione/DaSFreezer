@@ -1,0 +1,26 @@
+name: DaSFreezer
+version: 1.0.0
+main: com.ryvione.dasfreezer.DaSFreezer
+api-version: 1.21
+authors: [Ryvione]
+description: FREEZE PLAYERS HUH WHAT DO YOU WANT TO KNOW BRO ITS TO FREEZE PLAYERRRS
+
+commands:
+  freeze:
+    description: Freeze a player to stop them from moving or interacting.
+    usage: /freeze <player>
+    permission: dasfreezer.freeze
+    permission-message: §cYou do not have permission to use this command.
+  unfreeze:
+    description: Unfreeze a player to restore their movement and interactions.
+    usage: /unfreeze <player>
+    permission: dasfreezer.unfreeze
+    permission-message: §cYou do not have permission to use this command.
+
+permissions:
+  dasfreezer.freeze:
+    description: Allows freezing players.
+    default: op
+  dasfreezer.unfreeze:
+    description: Allows unfreezing players.
+    default: op
